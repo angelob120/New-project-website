@@ -21,164 +21,50 @@
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
                     <li><a href="project.html" class="text-gray-700 hover:text-gray-900">Projects</a></li>
-                    <li><a href="resume.html" class="text-gray-700 hover:text-gray-900">Resume</a></li>
                     <li><a href="contact.html" class="text-gray-700 hover:text-gray-900">Contacts</a></li>
                 </ul>
             </nav>
         </header>
-
-        <!-- Main Content -->
-        <div class="flex flex-col lg:flex-row justify-between items-center mt-12">
-            <div class="lg:w-1/2">
-                <h2 class="text-6xl font-bold text-gray-800 mb-2">Hello, my name is Angelo Brown</h2>
-                <p class="text-3xl text-gray-600 mb-6">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
-                <div class="flex gap-4">
-                    <a href="#" class="bg-blue-600 text-white px-5 py-2 inline-block rounded hover:bg-blue-700 transition-colors">Projects</a>
-                    <a href="#" class="text-blue-600 border border-blue-600 px-5 py-2 inline-block rounded hover:bg-blue-100 transition-colors">LinkedIn</a>
-                </div>
-            </div>
-            <div class="lg:w-1/2 mt-8 lg:mt-0">
-                <!-- Replace `path-to-your-image` with the actual path to your image -->
-                <img src="Group 87.png" alt="Angelo Brown" class="">
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="flex justify-center items-center mt-12">
-            <div class="mt-6 lg:mt-0">
-                <!-- Replace `path-to-your-image` with the actual path to your image -->
-                <img src="Frame 3353.png" alt="Angelo Brown" class="w-3/4 mx-auto">
-            </div>
-        </div>
-
-        <br>
-
-        <div x-data="{ openDropdown: null }" class="p-6">
-            <div class="space-y-2">
-                <!-- Dropdown Header 1 -->
-                <div @click="openDropdown = openDropdown === 1 ? null : 1" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                    <span>Font End Web Developer Skills</span>
-                    <svg :class="{'rotate-180': openDropdown === 1}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <!-- Dropdown Content 1 -->
-                <div x-show="openDropdown === 1" class="border border-t-0 border-blue-200">
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
-                    <!-- More items -->
-                </div>
-        
-                <!-- Dropdown Header 2 -->
-                <div @click="openDropdown = openDropdown === 2 ? null : 2" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                    <span>iOS App Developer Skills</span>
-                    <svg :class="{'rotate-180': openDropdown === 2}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <!-- Dropdown Content 2 -->
-                <div x-show="openDropdown === 2" class="border border-t-0 border-blue-200">
-                    <!-- Content for the iOS App Developer Skills -->
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
-                </div>
-        
-                <!-- Dropdown Header 3 -->
-                <div @click="openDropdown = openDropdown === 3 ? null : 3" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                    <span>Third Dropdown Title</span>
-                    <svg :class="{'rotate-180': openDropdown === 3}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <!-- Dropdown Content 3 -->
-                <div x-show="openDropdown === 3" class="border border-t-0 border-blue-200">
-                    <!-- Content for the third dropdown -->
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
-                </div>
-        
-                <!-- Dropdown Header 4 -->
-                <div @click="openDropdown = openDropdown === 4 ? null : 4" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                    <span>Fourth Dropdown Title</span>
-                    <svg :class="{'rotate-180': openDropdown === 4}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <!-- Dropdown Content 4 -->
-                <div x-show="openDropdown === 4" class="border border-t-0 border-blue-200">
-                    <!-- Content for the fourth dropdown -->
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-        <br>
-
-        <div class="flex items-center justify-center">
-            <h1 class="text-6xl font-bold">Angelo Brown</h1>
-        </div>
-        <br>
-
-        <br>
-
-        <div class="flex items-center justify-center">
-            <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden lg:flex">
-                <div class="lg:w-1/2 p-8 flex flex-col justify-between "> <!-- Use flex-col for vertical layout -->
-                    <div> <!-- Container for the text -->
-                        <br>
-                        <h2 class="text-5xl font-bold">Project Name</h2> <!-- Left-aligned text -->
-                        <p class="text-3xl mt-6 text-gray-600">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                    </div>
-                    <div class="text-left"> <!-- Center the button -->
-                        <a href="#" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">View Project</a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <!-- Replace with your project image -->
-                    <img src="Screenshot 2024-03-12 at 2.33 1.png" alt="Project Image" class="w-full h-full object-cover">
-                </div>
-            </div>
-        </div>
-
-        
-        
-
-        <br>
-
-        <div class="flex items-center justify-center">
-            <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden lg:flex">
-                <div class="lg:w-1/2">
-                    <!-- Replace with your project image -->
-                    <img src="Screenshot 2024-03-12 at 2.26 1.png" alt="Project Image" class="w-full h-full object-cover">
-                </div>
-                <div class="lg:w-1/2 p-8">
-                    <h2 class="text-5xl font-bold">Project Name</h2>
-                    <p class="text-3xl mt-6 text-gray-600">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                    <a href="#" class="mt-8 inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">View Project</a>
-                </div>
-            </div>
-        </div>
-        
-
-        <br>
-
-        <div class="flex items-center justify-center">
-            <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden lg:flex">
-                <div class="lg:w-1/2 p-8">
-                    <h2 class="text-5xl font-bold">Project Name</h2>
-                    <p class="text-3xl mt-6 text-gray-600">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                    <a href="#" class="mt-8 inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">View Project</a>
-                </div>
-                <div class="lg:w-1/2">
-                    <!-- Replace with your project image -->
-                    <img src="Screenshot 2024-03-12 at 2.26 1.png" alt="Project Image" class="w-full h-full object-cover">
-                </div>
-            </div>
-        </div>
-        
     </div>
+
+
+    <!-- Main Content -->
+    <!-- Contact Form Section -->
+    <div class="container mx-auto px-6 py-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-10">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+            <form action="your-server-side-code" method="POST">
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-lg font-bold mb-2" for="name">Name</label>
+                    <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" style="font-size: 1.125rem;">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-lg font-bold mb-2" for="email">Email</label>
+                    <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="you@example.com" style="font-size: 1.125rem;">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-lg font-bold mb-2" for="message">Message</label>
+                    <textarea class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message" style="font-size: 1.125rem;"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline" type="submit" style="font-size: 1.125rem;">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+      
+
+      
+      
+      
 </body>
+
+
+
+
+
 </html>
