@@ -6,6 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Add this in your <head> section -->
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-6myvLch1Ic1ZoGIz8VJPulDt5ttYZlcsHb8P0aEtY1yPFHtTOOY2cDEjzHl/8uUfSWcgveH6LCwM4rKbeFdqZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <title>Angelo Brown - Web Developer</title>
     <style>
@@ -30,10 +32,11 @@
         <div class="flex flex-col lg:flex-row justify-between items-center mt-12">
             <div class="lg:w-1/2">
                 <h2 class="text-6xl font-bold text-gray-800 mb-2">Hello, my name is Angelo Brown</h2>
+                <br>
                 <p class="text-3xl text-gray-600 mb-6">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
                 <div class="flex gap-4">
-                    <a href="#" class="bg-blue-600 text-white px-5 py-2 inline-block rounded hover:bg-blue-700 transition-colors">Projects</a>
-                    <a href="#" class="text-blue-600 border border-blue-600 px-5 py-2 inline-block rounded hover:bg-blue-100 transition-colors">LinkedIn</a>
+                    <a href="https://github.com/angelob120" class="bg-blue-600 text-white px-5 py-2 inline-block rounded hover:bg-blue-700 transition-colors"> Github</a>
+                    <a href="https://www.linkedin.com/in/angelo-brown-45122a217/" class="text-blue-600 border border-blue-600 px-5 py-2 inline-block rounded hover:bg-blue-100 transition-colors">LinkedIn</a>
                 </div>
             </div>
             <div class="lg:w-1/2 mt-8 lg:mt-0">
@@ -63,8 +66,13 @@
                 </div>
                 <!-- Dropdown Content 1 -->
                 <div x-show="openDropdown === 1" class="border border-t-0 border-blue-200">
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Html</h6>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">CSS</h6>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">JS</h6>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Python</h6>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">React</h6>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Node</h6>
+                    <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Fire Base</h6>
                     <!-- More items -->
                 </div>
         
@@ -78,13 +86,14 @@
                 <!-- Dropdown Content 2 -->
                 <div x-show="openDropdown === 2" class="border border-t-0 border-blue-200">
                     <!-- Content for the iOS App Developer Skills -->
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
+                    <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Swift UI</h6>
+                    <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">App Security</h6>
+                    <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Adola</h6>
                 </div>
         
                 <!-- Dropdown Header 3 -->
                 <div @click="openDropdown = openDropdown === 3 ? null : 3" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                    <span>Third Dropdown Title</span>
+                    <span>Desgin</span>
                     <svg :class="{'rotate-180': openDropdown === 3}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
@@ -92,22 +101,8 @@
                 <!-- Dropdown Content 3 -->
                 <div x-show="openDropdown === 3" class="border border-t-0 border-blue-200">
                     <!-- Content for the third dropdown -->
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
-                </div>
-        
-                <!-- Dropdown Header 4 -->
-                <div @click="openDropdown = openDropdown === 4 ? null : 4" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                    <span>Fourth Dropdown Title</span>
-                    <svg :class="{'rotate-180': openDropdown === 4}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <!-- Dropdown Content 4 -->
-                <div x-show="openDropdown === 4" class="border border-t-0 border-blue-200">
-                    <!-- Content for the fourth dropdown -->
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 1</a>
-                    <a href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Subitem 2</a>
+                    <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Figma</h6>
+                    <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Sketch</h6>
                 </div>
             </div>
         </div>
@@ -117,7 +112,7 @@
         <br>
 
         <div class="flex items-center justify-center">
-            <h1 class="text-6xl font-bold">Angelo Brown</h1>
+            <h1 class="text-6xl font-bold">Recent Project</h1>
         </div>
         <br>
 
@@ -125,14 +120,19 @@
 
         <div class="flex items-center justify-center">
             <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden lg:flex">
-                <div class="lg:w-1/2 p-8 flex flex-col justify-between "> <!-- Use flex-col for vertical layout -->
+                <div class="lg:w-1/2 p-8 flex flex-col justify-between"> <!-- Use flex-col for vertical layout -->
                     <div> <!-- Container for the text -->
                         <br>
-                        <h2 class="text-5xl font-bold">Project Name</h2> <!-- Left-aligned text -->
-                        <p class="text-3xl mt-6 text-gray-600">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                        <h2 class="text-5xl font-bold">Mega Softworks</h2> <!-- Left-aligned text -->
+                        <p class="text-3xl mt-6 text-gray-600">Develope with React, Mega Softworks is a productivity SAAS tool aimed at enhancing workflow efficiency. </p>
                     </div>
-                    <div class="text-left"> <!-- Center the button -->
-                        <a href="#" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">View Project</a>
+                    <div class="flex justify-between"> <!-- Center the buttons -->
+                        <a href="https://angelob120.github.io/Mega-Softworks/" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                            <i class="fas fa-cloud-download-alt mr-2"></i> View Project
+                        </a>
+                        <a href="https://github.com/angelob120/Mega-Softworks" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                            <i class="fas fa-cloud-download-alt mr-2"></i> View Github
+                        </a>
                     </div>
                 </div>
                 <div class="lg:w-1/2">
@@ -141,6 +141,8 @@
                 </div>
             </div>
         </div>
+        
+        
 
         
         
@@ -155,10 +157,20 @@
                     <!-- Replace with your project image -->
                     <img src="Screenshot 2024-03-12 at 2.32 1.png" alt="Project Image" class="w-full h-full object-cover">
                 </div>
-                <div class="lg:w-1/2 p-8">
-                    <h2 class="text-5xl font-bold">Project Name</h2>
-                    <p class="text-3xl mt-6 text-gray-600">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                    <a href="#" class="mt-8 inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">View Project</a>
+                <div class="lg:w-1/2 p-8 flex flex-col justify-between"> <!-- Use flex-col for vertical layout -->
+                    <div> <!-- Container for the text -->
+                        <br>
+                        <h2 class="text-5xl font-bold">Dashboard</h2> <!-- Left-aligned text -->
+                        <p class="text-3xl mt-6 text-gray-600">Developed using React, this E-commerce dashboard simplifies backend management for online businesses. </p>
+                    </div>
+                    <div class="flex justify-between"> <!-- Center the buttons -->
+                        <a href="https://angelob120.github.io/Store-Dashboard/" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                            <i class="fas fa-cloud-download-alt mr-2"></i> View Project
+                        </a>
+                        <a href="https://github.com/angelob120/Store-Dashboard" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                            <i class="fas fa-cloud-download-alt mr-2"></i> View Github
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,10 +182,20 @@
 
         <div class="flex items-center justify-center">
             <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden lg:flex">
-                <div class="lg:w-1/2 p-8">
-                    <h2 class="text-5xl font-bold">Project Name</h2>
-                    <p class="text-3xl mt-6 text-gray-600">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                    <a href="#" class="mt-8 inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">View Project</a>
+                <div class="lg:w-1/2 p-8 flex flex-col justify-between"> <!-- Use flex-col for vertical layout -->
+                    <div> <!-- Container for the text -->
+                        <br>
+                        <h2 class="text-5xl font-bold">Stellar Accounting</h2> <!-- Left-aligned text -->
+                        <p class="text-3xl mt-6 text-gray-600"> Made with Bootstrap, I designed a sleek landing page for Stellar Accounting, a fictional accounting service. </p>
+                    </div>
+                    <div class="flex justify-between"> <!-- Center the buttons -->
+                        <a href="https://angelob120.github.io/Stellar_Accounting/" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                            <i class="fas fa-cloud-download-alt mr-2"></i> View Project
+                        </a>
+                        <a href="https://github.com/angelob120/Stellar_Accounting" class="inline-block bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                            <i class="fas fa-cloud-download-alt mr-2"></i> View Github
+                        </a>
+                    </div>
                 </div>
                 <div class="lg:w-1/2">
                     <!-- Replace with your project image -->
