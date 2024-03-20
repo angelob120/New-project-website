@@ -6,15 +6,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Add this in your <head> section -->
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 
     <title>Angelo Brown - Web Developer</title>
     <style>
         /* Additional styles can be placed here if needed */
     </style>
 </head>
-<body >
+<body>
     <!-- Header Section -->
-    <div class="container mx-auto px-6 py-8">
+    <div class="container mx-auto px-4 sm:px-6 py-4">
         <header class="flex justify-between items-center">
             <h1 class="text-xl font-semibold">Angelo Brown</h1>
             <nav>
@@ -28,38 +32,73 @@
     </div>
 
 
-    <!-- Main Content -->
-    <!-- Contact Form Section -->
-    <div class="container mx-auto px-6 py-8">
-        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-10">
-            <h2 class="text-5xl font-bold text-gray-800 mb-6">Get in Touch</h2>
-            <form action="your-server-side-code" method="POST">
-                <div class="mb-6">
-                    <label class="block text-gray-700 text-lg font-bold mb-2" for="name">Name</label>
-                    <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" style="font-size: 1.125rem;">
-                </div>
-                <div class="mb-6">
-                    <label class="block text-gray-700 text-lg font-bold mb-2" for="email">Email</label>
-                    <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="you@example.com" style="font-size: 1.125rem;">
-                </div>
-                <div class="mb-6">
-                    <label class="block text-gray-700 text-lg font-bold mb-2" for="message">Message</label>
-                    <textarea class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message" style="font-size: 1.125rem;"></textarea>
-                </div>
-                <div class="flex items-center justify-between">
-                    <button class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline" type="submit" style="font-size: 1.125rem;">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
+<!-- Main Content -->
+<!-- Contact Form Section -->
+<br>
+<br>
+<br>
+<div class="container mx-auto px-6 py-8 px-8">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-10">
+        <h2 class="text-5xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+        <form id="contact-form" action="https://api.emailjs.com/api/v1.0/email/send" method="POST">
+            <div class="mb-6">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="name">Name</label>
+                <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" name="name" placeholder="Your Name" style="font-size: 1.125rem;">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="email">Email</label>
+                <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" name="email" placeholder="you@example.com" style="font-size: 1.125rem;">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="message">Message</label>
+                <textarea class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" placeholder="Your message" style="font-size: 1.125rem;"></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline" type="submit" style="font-size: 1.125rem;">
+                    Send Message
+                </button>
+            </div>
+        </form>
     </div>
+</div>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("_zA7U_IZEYf9j3y4J");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Send the form data via EmailJS
+        emailjs.sendForm('service_pzy4uc9', 'template_sxt1ojq', this)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your message has been sent successfully!'); // Display success message
+                window.location.reload(); // Refresh the page
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+</script>
 
 
-      
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-      
-      
+
+<div class="px-8 tidycal-embed" data-path="angelo3/quick-10-minute-chat"></div>
+<script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+
+<br>
+<br>
+<br>
+<br>
+
       
 </body>
 
@@ -71,15 +110,16 @@
 
 <footer class="relative">
     <img src="Group 86.svg" alt="" class="w-full">
-    <div class="absolute inset-0 flex items-center justify-between px-16 lg:px-32">
-      <div>
-        <h1 class="font-bold text-4xl text-white">Angelo Brown</h1>
-      </div>
-      <div>
-        <p class="text-xl text-white">angelobrown1000@gmail.com</p>
-      </div>
+    <div class="absolute inset-0 flex flex-col sm:flex-row items-center justify-around px-4 sm:px-16 lg:px-32">
+        <div class="text-center sm:text-left mb-4 sm:mb-0">
+            <br>
+            <h1 class="font-bold text-2xl sm:text-3xl lg:text-4xl text-white">Angelo Brown</h1>
+        </div>
+        <div class="text-center sm:text-right">
+            <p class="text-lg sm:text-xl text-white">angelobrown1000@gmail.com</p>
+        </div>
     </div>
-  </footer>
+</footer>
   
 
 
