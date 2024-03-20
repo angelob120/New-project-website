@@ -19,235 +19,238 @@
 
 </head>
 
-<body class="px-8" >
+<body >
+    <div class="px-8">
+        <div class="container mx-auto px-4 sm:px-6 py-4">
+            <header class="flex justify-between items-center">
+                <h1 class="text-xl font-semibold">Angelo Brown</h1>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
+                        <li><a href="project.html" class="text-gray-700 hover:text-gray-900">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-700 hover:text-gray-900">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    
+        
+            
+    
+    
+                <!-- Main Content -->
+                <br>
+                <br>
+                <br>
+                <div class="flex flex-col sm:flex-row justify-between items-center mt-6">
+                    <div class="w-full sm:w-1/2 px-4">
+                        <h2 class="text-4xl sm:text-6xl font-bold text-gray-800 mb-2">Hello, my name is Angelo Brown</h2>
+                        <br>
+                        <p class="text-xl sm:text-3xl text-gray-600 mb-4">Short text with details about you...</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/angelob120" class="bg-blue-600 text-white px-5 py-2 inline-block rounded hover:bg-blue-700 transition-colors"> Github</a>
+                            <a href="https://www.linkedin.com/in/angelo-brown-45122a217/" class="text-blue-600 border border-blue-600 px-5 py-2 inline-block rounded hover:bg-blue-100 transition-colors">LinkedIn</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
+                        <!-- Replace `path-to-your-image` with the actual path to your image -->
+                        <img src="Group 87.png" alt="Angelo Brown" class="">
+                    </div>
+                </div>
+    
+                <!-- Main Content -->
+                <div class="flex justify-center items-center mt-12">
+                    <div class="mt-6 lg:mt-0">
+                        <!-- Replace `path-to-your-image` with the actual path to your image -->
+                        <img src="Frame 3353.png" alt="Angelo Brown" class="w-3/4 mx-auto">
+                    </div>
+                </div>
+    
+                <br>
+    
+                <div x-data="{ openDropdown: null }" class="p-6">
+                    <div class="space-y-2">
+                        <!-- Dropdown Header 1 -->
+                        <div @click="openDropdown = openDropdown === 1 ? null : 1" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
+                            <span>Font End Web Developer Skills</span>
+                            <svg :class="{'rotate-180': openDropdown === 1}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Content 1 -->
+                        <div x-show="openDropdown === 1" class="border border-t-0 border-blue-200">
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Html</h6>
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">CSS</h6>
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">JS</h6>
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Python</h6>
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">React</h6>
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Node</h6>
+                            <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Fire Base</h6>
+                            <!-- More items -->
+                        </div>
+                
+                        <!-- Dropdown Header 2 -->
+                        <div @click="openDropdown = openDropdown === 2 ? null : 2" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
+                            <span>iOS App Developer Skills</span>
+                            <svg :class="{'rotate-180': openDropdown === 2}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Content 2 -->
+                        <div x-show="openDropdown === 2" class="border border-t-0 border-blue-200">
+                            <!-- Content for the iOS App Developer Skills -->
+                            <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Swift UI</h6>
+                            <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">App Security</h6>
+                            <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Adola</h6>
+                        </div>
+                
+                        <!-- Dropdown Header 3 -->
+                        <div @click="openDropdown = openDropdown === 3 ? null : 3" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
+                            <span>Desgin</span>
+                            <svg :class="{'rotate-180': openDropdown === 3}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Content 3 -->
+                        <div x-show="openDropdown === 3" class="border border-t-0 border-blue-200">
+                            <!-- Content for the third dropdown -->
+                            <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Figma</h6>
+                            <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Sketch</h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <br>
+    
+                <br>
+    
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex items-center justify-center">
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center mx-4">Recent Projects</h1>
+                    </div>
+                </div>
+                    <br>
+    
+    
+            <br>
+    
+            <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="lg:flex">
+                    <div class="lg:w-1/2">
+                        <!-- Replace with your project image -->
+                        <img src="Screenshot 2024-03-12 at 2.33 1.png" alt="Project Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="lg:w-1/2 p-8 flex flex-col justify-between">
+                        <div class="mb-6">
+                            <br class="lg:hidden"> <!-- Hide <br> on large screens -->
+                            <h2 class="text-3xl lg:text-5xl font-bold">Mega Softworks</h2>
+                            <p class="text-xl lg:text-3xl mt-4 lg:mt-6 text-gray-600">Developed with React, Mega Softworks is a productivity SAAS tool aimed at enhancing workflow efficiency.</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-4">
+                            <a href="https://angelob120.github.io/Mega-Softworks/" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold mb-2 lg:mb-0 lg:mr-2">
+                                <i class="fas fa-cloud-download-alt mr-2"></i> View Project
+                            </a>
+                            <a href="https://github.com/angelob120/Mega-Softworks" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                                <i class="fas fa-cloud-download-alt mr-2"></i> View Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+    
+            
+            
+    
+            <br>
+            <br>
+            <br>
+    
+            <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="lg:flex">
+                    <div class="lg:w-1/2">
+                        <!-- Replace with your project image -->
+                        <img src="Screenshot 2024-03-12 at 2.32 1.png" alt="Project Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="lg:w-1/2 p-8 flex flex-col justify-between">
+                        <div class="mb-6">
+                            <br class="lg:hidden"> <!-- Hide <br> on large screens -->
+                            <h2 class="text-3xl lg:text-5xl font-bold">Dashboard</h2>
+                            <p class="text-xl lg:text-3xl mt-4 lg:mt-6 text-gray-600">Developed using React, this E-commerce dashboard simplifies backend management for online businesses.</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-4">
+                            <a href="https://angelob120.github.io/Store-Dashboard/" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold mb-2 lg:mb-0 lg:mr-2">
+                                <i class="fas fa-cloud-download-alt mr-2"></i> View Project
+                            </a>
+                            <a href="https://github.com/angelob120/Store-Dashboard" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                                <i class="fas fa-cloud-download-alt mr-2"></i> View Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+            
+    
+            <br>
+            <br>
+            <br>
+    
+            <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="lg:flex">
+                    <div class="lg:w-1/2">
+                        <!-- Replace with your project image -->
+                        <img src="Screenshot 2024-03-12 at 2.26 1.png" alt="Project Image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="lg:w-1/2 p-8 flex flex-col justify-between">
+                        <div class="mb-6">
+                            <br class="lg:hidden"> <!-- Hide <br> on large screens -->
+                            <h2 class="text-3xl lg:text-5xl font-bold">Stellar Accounting</h2>
+                            <p class="text-xl lg:text-3xl mt-4 lg:mt-6 text-gray-600">Made with Bootstrap, I designed a sleek landing page for Stellar Accounting, a fictional accounting service.</p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-4">
+                            <a href="https://angelob120.github.io/Stellar_Accounting/" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold mb-2 lg:mb-0 lg:mr-2">
+                                <i class="fas fa-cloud-download-alt mr-2"></i> View Project
+                            </a>
+                            <a href="https://github.com/angelob120/Stellar_Accounting" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
+                                <i class="fas fa-cloud-download-alt mr-2"></i> View Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>    
 
-    <div class="container mx-auto px-4 sm:px-6 py-4">
-        <header class="flex justify-between items-center">
-            <h1 class="text-xl font-semibold">Angelo Brown</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
-                    <li><a href="project.html" class="text-gray-700 hover:text-gray-900">Projects</a></li>
-                    <li><a href="contact.html" class="text-gray-700 hover:text-gray-900">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
     </div>
+
+    <br>
+    <br>
+    <br>
 
     
         
-
-
-            <!-- Main Content -->
-            <br>
-            <br>
-            <br>
-            <div class="flex flex-col sm:flex-row justify-between items-center mt-6">
-                <div class="w-full sm:w-1/2 px-4">
-                    <h2 class="text-4xl sm:text-6xl font-bold text-gray-800 mb-2">Hello, my name is Angelo Brown</h2>
-                    <br>
-                    <p class="text-xl sm:text-3xl text-gray-600 mb-4">Short text with details about you...</p>
-                    <div class="flex gap-4">
-                        <a href="https://github.com/angelob120" class="bg-blue-600 text-white px-5 py-2 inline-block rounded hover:bg-blue-700 transition-colors"> Github</a>
-                        <a href="https://www.linkedin.com/in/angelo-brown-45122a217/" class="text-blue-600 border border-blue-600 px-5 py-2 inline-block rounded hover:bg-blue-100 transition-colors">LinkedIn</a>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
-                    <!-- Replace `path-to-your-image` with the actual path to your image -->
-                    <img src="Group 87.png" alt="Angelo Brown" class="">
-                </div>
-            </div>
-
-            <!-- Main Content -->
-            <div class="flex justify-center items-center mt-12">
-                <div class="mt-6 lg:mt-0">
-                    <!-- Replace `path-to-your-image` with the actual path to your image -->
-                    <img src="Frame 3353.png" alt="Angelo Brown" class="w-3/4 mx-auto">
-                </div>
-            </div>
-
-            <br>
-
-            <div x-data="{ openDropdown: null }" class="p-6">
-                <div class="space-y-2">
-                    <!-- Dropdown Header 1 -->
-                    <div @click="openDropdown = openDropdown === 1 ? null : 1" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                        <span>Font End Web Developer Skills</span>
-                        <svg :class="{'rotate-180': openDropdown === 1}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <!-- Dropdown Content 1 -->
-                    <div x-show="openDropdown === 1" class="border border-t-0 border-blue-200">
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Html</h6>
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">CSS</h6>
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">JS</h6>
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Python</h6>
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">React</h6>
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Node</h6>
-                        <h6 href="" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Fire Base</h6>
-                        <!-- More items -->
-                    </div>
-            
-                    <!-- Dropdown Header 2 -->
-                    <div @click="openDropdown = openDropdown === 2 ? null : 2" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                        <span>iOS App Developer Skills</span>
-                        <svg :class="{'rotate-180': openDropdown === 2}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <!-- Dropdown Content 2 -->
-                    <div x-show="openDropdown === 2" class="border border-t-0 border-blue-200">
-                        <!-- Content for the iOS App Developer Skills -->
-                        <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Swift UI</h6>
-                        <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">App Security</h6>
-                        <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Adola</h6>
-                    </div>
-            
-                    <!-- Dropdown Header 3 -->
-                    <div @click="openDropdown = openDropdown === 3 ? null : 3" class="flex justify-between items-center p-4 bg-blue-500 text-white cursor-pointer">
-                        <span>Desgin</span>
-                        <svg :class="{'rotate-180': openDropdown === 3}" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <!-- Dropdown Content 3 -->
-                    <div x-show="openDropdown === 3" class="border border-t-0 border-blue-200">
-                        <!-- Content for the third dropdown -->
-                        <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Figma</h6>
-                        <h6 href="#" class="block px-4 py-2 text-blue-700 bg-blue-50 hover:bg-blue-100">Sketch</h6>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <br>
-
-            <div class="flex flex-col items-center justify-center">
-                <div class="flex items-center justify-center">
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center mx-4">Recent Projects</h1>
-                </div>
-            </div>
-                <br>
-
-
-        <br>
-
-        <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="lg:flex">
-                <div class="lg:w-1/2">
-                    <!-- Replace with your project image -->
-                    <img src="Screenshot 2024-03-12 at 2.33 1.png" alt="Project Image" class="w-full h-full object-cover">
-                </div>
-                <div class="lg:w-1/2 p-8 flex flex-col justify-between">
-                    <div class="mb-6">
-                        <br class="lg:hidden"> <!-- Hide <br> on large screens -->
-                        <h2 class="text-3xl lg:text-5xl font-bold">Mega Softworks</h2>
-                        <p class="text-xl lg:text-3xl mt-4 lg:mt-6 text-gray-600">Developed with React, Mega Softworks is a productivity SAAS tool aimed at enhancing workflow efficiency.</p>
-                    </div>
-                    <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-4">
-                        <a href="https://angelob120.github.io/Mega-Softworks/" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold mb-2 lg:mb-0 lg:mr-2">
-                            <i class="fas fa-cloud-download-alt mr-2"></i> View Project
-                        </a>
-                        <a href="https://github.com/angelob120/Mega-Softworks" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
-                            <i class="fas fa-cloud-download-alt mr-2"></i> View Github
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        
-
-        
-        
-
-        <br>
-        <br>
-        <br>
-
-        <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="lg:flex">
-                <div class="lg:w-1/2">
-                    <!-- Replace with your project image -->
-                    <img src="Screenshot 2024-03-12 at 2.32 1.png" alt="Project Image" class="w-full h-full object-cover">
-                </div>
-                <div class="lg:w-1/2 p-8 flex flex-col justify-between">
-                    <div class="mb-6">
-                        <br class="lg:hidden"> <!-- Hide <br> on large screens -->
-                        <h2 class="text-3xl lg:text-5xl font-bold">Dashboard</h2>
-                        <p class="text-xl lg:text-3xl mt-4 lg:mt-6 text-gray-600">Developed using React, this E-commerce dashboard simplifies backend management for online businesses.</p>
-                    </div>
-                    <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-4">
-                        <a href="https://angelob120.github.io/Store-Dashboard/" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold mb-2 lg:mb-0 lg:mr-2">
-                            <i class="fas fa-cloud-download-alt mr-2"></i> View Project
-                        </a>
-                        <a href="https://github.com/angelob120/Store-Dashboard" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
-                            <i class="fas fa-cloud-download-alt mr-2"></i> View Github
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        
-
-        <br>
-        <br>
-        <br>
-
-        <div class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="lg:flex">
-                <div class="lg:w-1/2">
-                    <!-- Replace with your project image -->
-                    <img src="Screenshot 2024-03-12 at 2.26 1.png" alt="Project Image" class="w-full h-full object-cover">
-                </div>
-                <div class="lg:w-1/2 p-8 flex flex-col justify-between">
-                    <div class="mb-6">
-                        <br class="lg:hidden"> <!-- Hide <br> on large screens -->
-                        <h2 class="text-3xl lg:text-5xl font-bold">Stellar Accounting</h2>
-                        <p class="text-xl lg:text-3xl mt-4 lg:mt-6 text-gray-600">Made with Bootstrap, I designed a sleek landing page for Stellar Accounting, a fictional accounting service.</p>
-                    </div>
-                    <div class="flex flex-col lg:flex-row items-center lg:justify-between mt-4">
-                        <a href="https://angelob120.github.io/Stellar_Accounting/" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold mb-2 lg:mb-0 lg:mr-2">
-                            <i class="fas fa-cloud-download-alt mr-2"></i> View Project
-                        </a>
-                        <a href="https://github.com/angelob120/Stellar_Accounting" class="bg-black text-white px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold">
-                            <i class="fas fa-cloud-download-alt mr-2"></i> View Github
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
-        </div>
-
-
-        <footer class="relative">
-            <img src="Group 86.svg" alt="" class="w-full">
-            <div class="absolute inset-0 flex flex-col sm:flex-row items-center justify-around px-4 sm:px-16 lg:px-32">
-                <div class="text-center sm:text-left mb-4 sm:mb-0">
-                    <br>
-                    <h1 class="font-bold text-2xl sm:text-3xl lg:text-4xl text-white">Angelo Brown</h1>
-                </div>
-                <div class="text-center sm:text-right">
-                    <p class="text-lg sm:text-xl text-white">angelobrown1000@gmail.com</p>
-                </div>
-            </div>
-        </footer>
-        
-
-        
-        
         
 </body>
+
+<footer class="relative">
+    <img src="Group 86.svg" alt="" class="w-full">
+    <div class="absolute inset-0 flex flex-col sm:flex-row items-center justify-around px-4 sm:px-16 lg:px-32">
+        <div class="text-center sm:text-left mb-4 sm:mb-0">
+            <br>
+            <h1 class="font-bold text-2xl sm:text-3xl lg:text-4xl text-white">Angelo Brown</h1>
+        </div>
+        <div class="text-center sm:text-right">
+            <p class="text-lg sm:text-xl text-white">angelobrown1000@gmail.com</p>
+        </div>
+    </div>
+</footer>
 </html>        
-</body>
 
